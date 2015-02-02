@@ -1,0 +1,23 @@
+div{
+	display:block;
+	width: 100%;
+}
+
+
+
+.slide > img{
+	display: block;
+	padding-bottom:40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.siteheader{
+	text-align: center;
+	background-color: black;
+}
+
+.siteheader > h1{
+	color:white;
+}
+
