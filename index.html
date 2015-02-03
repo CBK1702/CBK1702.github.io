@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Home Page</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -31,16 +31,37 @@
   <h1 class="title">Welcome Page</h1>
 </div>
 
-  <ion-content class="has-header">
+   <ion-view title="{{tab.name}}">
+    <ion-content class="has-header" padding="true">
 
-  <div id="video1" class="video-container">
-       <iframe id="video1" src="https://www.youtube.com/embed/cLpUj67V3eE" frameborder="1" width="560" height="315"></iframe>
-  </div>
-</ion-content>
+        <ion-slide-box id>
+            <ion-slide class="slide">
+                <img src="img/ionic.png">            
+              </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/ionic.png">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/ionic.png">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/ionic.png">
+            </ion-slide>
+        </ion-slide-box>
+
+        <div id="homeContent">
+          Content
+        </div>
+
+
+    </ion-content>
+</ion-view>
+
+ 
 
 
 <div class="tabs tabs-icon-top">
-  <a href="index.html" class="tab-item">
+  <a href="index.html" class="tab-item active">
     <i class="icon ion-home"></i>
     Home
   </a>
