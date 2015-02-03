@@ -37,4 +37,16 @@ div{
 	background-color:black;
 }
 
+#siteContent{
+	text-align: center;
+	color:white;
+	background-color:green;
+}
+
+#aboutContent{
+	text-align: center;
+	color:white;
+	background-color:blue;
+}
+
 
