@@ -49,4 +49,13 @@ div{
 	background-color:blue;
 }
 
+#video{
+	height:20px;
+	width:20px;
+	background-color: red;
+	position: absolute;
+	z-index: 99;
+}
+
+
 
