@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Home Page</title>
@@ -20,75 +21,78 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
+</head>
 
- 
-<!--<div class="bar bar-header bar-positive">
+<body ng-app="starter">
+
+
+    <!--<div class="bar bar-header bar-positive">
   <h1 class="title">bar-positive</h1>
 </div>-->
-<div class="bar bar-header bar-balanced">
-  <h1 class="title">Welcome Page</h1>
-</div>
+    <div class="bar bar-header bar-sable">
+        <img class="title" id="headerlogo" src="img/logo.png">
+    </div>
 
-   <ion-view title="{{tab.name}}">
-    <ion-content class="has-header" padding="true">
+    <ion-view title="{{tab.name}}">
+        <ion-content class="has-header" padding="true">
 
-        <ion-slide-box id>
-            <ion-slide class="slide">
-                <img src="img/stmarys.jpg">            
-              </ion-slide>
-            <ion-slide class="slide">
-                <img src="img/hearnshotel.jpg">
-            </ion-slide>
-            <ion-slide class="slide">
-                <img src="img/jailgate.jpg">
-            </ion-slide>
-            <ion-slide class="slide">
-                <img src="img/mainguard.jpg">
-            </ion-slide>
-        </ion-slide-box>
+            <ion-slide-box id>
+                <ion-slide class="slide">
+                    <img src="img/stmarys.jpg">
+                </ion-slide>
+                <ion-slide class="slide">
+                    <img src="img/hearnshotel.jpg">
+                </ion-slide>
+                <ion-slide class="slide">
+                    <img src="img/jailgate.jpg">
+                </ion-slide>
+                <ion-slide class="slide">
+                    <img src="img/mainguard.jpg">
+                </ion-slide>
+            </ion-slide-box>
 
-        <div id="homeContent">
-          Content
-        </div>
 
-   Click me to watch Video: <input type="checkbox" ng-model="checked"><br/>
-<div> 
-  <div class="check-element animate-hide" ng-show="checked">
-    <span class="glyphicon glyphicon-thumbs-up"></span><div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/yvSmyiOycQM" frameborder="0" width="100%" height="315"></iframe>
+            <div id="videobutton" >Click me to watch Video:
+            <input  type="checkbox" ng-model="checked">
+          </div>
+            <br/>
+            <div>
+                <div class="check-element animate-hide" ng-show="checked">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/yvSmyiOycQM" frameborder="0" width="100%" height="315"></iframe>
+                    </div>
                 </div>
-  </div>
-</div>
-<div>
-  <div class="check-element animate-hide" ng-hide="checked">
-    <span class="glyphicon glyphicon-thumbs-down"></span>
-  </div>
-</div>
+            </div>
+            <div>
 
 
-    </ion-content>
-</ion-view>
+                <div id="homeContent">
+                    <h1>Welcome</h1>
 
-  
+                </div>
 
- 
+            </div>
 
 
-<div class="tabs tabs-icon-top">
-  <a href="index.html" class="tab-item active">
-    <i class="icon ion-home"></i>
-    Home
-  </a>
-  <a href="sites.html"class="tab-item">
-    <i class="icon ion-earth"></i>
-    Sites
-  </a>
-  <a href="geal.html" class="tab-item">
-    <i class="icon ion-android-contacts"></i>
-    About Us
-  </a>
-</div>
-  </body>
+        </ion-content>
+    </ion-view>
+
+
+
+
+
+    <div class="tabs tabs-icon-top">
+        <a href="index.html" class="tab-item active">
+            <i class="icon ion-home"></i> Home
+        </a>
+        <a href="sites.html" class="tab-item">
+            <i class="icon ion-earth"></i> Sites
+        </a>
+        <a href="geal.html" class="tab-item">
+            <i class="icon ion-android-contacts"></i> About Us
+        </a>
+    </div>
+</body>
+
 </html>
