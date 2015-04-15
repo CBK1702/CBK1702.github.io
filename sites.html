@@ -1,96 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title></title>
+    <title>Home Page</title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
-    <!-- ionic/angularjs js -->
+ 
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
+
     <script src="cordova.js"></script>
 
-    <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/main.js"></script>
+</head>
 
- 
+<body ng-app="starter">
 
- <div class="bar bar-header bar-sable">
+
+
+
+
+    <div class="bar bar-header bar-sable">
         <img class="title" id="headerlogo" src="img/logo.png">
     </div>
 
 
-<ion-content class="has-header">
-<div class="list">
 
-    <a class="item item-avatar" href="site1.html">
-      <img src="img/stmarys.jpg">
-      <h2>Old St Marys Church</h2>
-      <p></p>
-    </a>
 
-     <a class="item item-avatar" href="site2.html">
-      <img src="img/hearnshotel.jpg">
-      <h2>Hearns Hotel</h2>
-      <p></p>
-    </a>
+    <ion-content class="has-header">
+        <div class="list list-inset">
 
-    <a class="item item-avatar" href="site3.html">
-      <img src="img/jailgate.jpg">
-      <h2>Jail Gate</h2>
-      <p></p>
-    </a>
 
-<a class="item item-avatar" href="site4.html">
-      <img src="img/westgatenew.jpg">
-      <h2>West Gate</h2>
-      <p></p>
-    </a>
-
-    <a class="item item-avatar" href="site5.html">
-      <img src="img/mainguard.jpg">
-      <h2>Main Guard</h2>
-      <p></p>
-    </a>
-
-</div>
-
-</ion-content>
+            <a class="item item-thumbnail-left" href="westgate.html">
+                <img src="img/westgatenew.jpg">
+                <h2>West Gate</h2>
+                <p></p>
+            </a>
 
 
 
+            <a class="item item-thumbnail-right" href="stmary.html">
+                <img src="img/stmarys.jpg">
+                <h2>Old St Marys Church</h2>
+                <p></p>
+            </a>
+
+            <a class="item item-thumbnail-left" href="mainguard.html">
+                <img src="img/mainguard.jpg">
+                <h2>Main Guard</h2>
+                <p></p>
+            </a>
 
 
-  
+
+            <a class="item item-thumbnail-right" href="jailgate.html">
+                <img src="img/jailgate.jpg">
+                <h2>Jail Gate</h2>
+                <p></p>
+            </a>
 
 
 
-<div class="tabs tabs-icon-top">
-  <a href="index.html" class="tab-item">
-    <i class="icon ion-home"></i>
-    Home
-  </a>
-  <a href="sites.html"class="tab-item active">
-    <i class="icon ion-earth"></i>
-    Sites
-  </a>
-  <a href="geal.html" class="tab-item">
-    <i class="icon ion-android-contacts"></i>
-    About Us
-  </a>
-  <a href="scanner.html" class="tab-item">
-            <i class="icon ion-camera"></i> Qr Scanner
+            <a class="item item-thumbnail-left" href="hearnshotel.html">
+                <img src="img/hearnshotel.jpg">
+                <h2>Hearns Hotel</h2>
+                <p></p>
+            </a>
+
+        </div>
+
+    </ion-content>
+
+
+    <div class="tabs tabs-icon-top">
+        <a href="index.html" class="tab-item">
+            <i class="icon ion-home"></i> Home
         </a>
-</div>
-  </body>
+        <a href="sites.html" class="tab-item active">
+            <i class="icon ion-earth"></i> Sites
+        </a>
+        <a href="gealtrails.html" class="tab-item">
+            <i class="icon ion-android-contacts"></i> About Us
+        </a>
+    </div>
+
+
+</body>
+
 </html>

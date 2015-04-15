@@ -21,6 +21,8 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
 </head>
 
 <body ng-app="starter">
@@ -33,53 +35,54 @@
         <img class="title" id="headerlogo" src="img/logo.png">
     </div>
 
-    <ion-view title="{{tab.name}}">
+    <ion-view title="{{tab.name}}" class="background">
         <ion-content class="has-header" padding="true">
 
             <ion-slide-box id>
-                <ion-slide class="slide">
-                    <img src="img/stmarys.jpg">
+            <ion-slide class="slide" show-pager="false" id="background">
+                    <a href="westgate.html"><img src="img/swipe.png"></a>
+                </ion-slide>
+                <ion-slide class="slide" show-pager="false" id="background">
+                    <a href="westgate.html"><img src="img/westgate.jpg"></a>
                 </ion-slide>
                 <ion-slide class="slide">
-                    <img src="img/hearnshotel.jpg">
+                    <a href="stmary.html"><img src="img/stmarys.jpg"></a>
                 </ion-slide>
                 <ion-slide class="slide">
-                    <img src="img/jailgate.jpg">
+                    <a href="mainguard.html"><img src="img/mainguard.jpg"></a>
                 </ion-slide>
                 <ion-slide class="slide">
-                    <img src="img/mainguard.jpg">
+                    <a href="jailgate.html"><img src="img/jailgate.jpg"></a>
+                </ion-slide>
+                <ion-slide class="slide">
+                    <a href="hearnshotel.html"><img src="img/hearnshotel.jpg"></a>
                 </ion-slide>
             </ion-slide-box>
-
-
-            <div id="videobutton" >Click me to watch Video:
-            <input  type="checkbox" ng-model="checked">
-          </div>
-            <br/>
-            <div>
-                <div class="check-element animate-hide" ng-show="checked">
-                    <span class="glyphicon glyphicon-thumbs-up"></span>
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/yvSmyiOycQM" frameborder="0" width="100%" height="315"></iframe>
-                    </div>
-                </div>
+            <div id="swipe">
+            <p>
+            Swipe to View More Images
+            </p>
             </div>
-            <div>
 
 
-                <div id="homeContent">
-                    <h1>Welcome</h1>
 
-                </div>
+
+
+            <div id="homeContent">
+                <h1>Welcome to Clonmel</h1>
+                <h2>Cluain Meala</h2>
+                <p> Welcome to Clonmel a place where history is everywhere to be seen. Walk the streets, take in the history and let us tell you the stories of the places around you.
 
             </div>
+
+            </div>
+
+
+
 
 
         </ion-content>
     </ion-view>
-
-
-
 
 
     <div class="tabs tabs-icon-top">
@@ -89,14 +92,11 @@
         <a href="sites.html" class="tab-item">
             <i class="icon ion-earth"></i> Sites
         </a>
-        <a href="geal.html" class="tab-item">
+        <a href="gealtrails.html" class="tab-item">
             <i class="icon ion-android-contacts"></i> About Us
         </a>
-
-        <a href="scanner.html" class="tab-item">
-            <i class="icon ion-camera"></i> Qr Scanner
-        </a>
     </div>
+
 </body>
 
 </html>

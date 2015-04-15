@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Hearns Hotel</title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mediaelementplayer.min.css" />
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/map-mainguard.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script>
+        $('video').mediaelementplayer({
+            success: function(mediaElement, originalNode) {
+                // do things
+            }
+        });
+    </script>
+
+
+</head>
+
+<body ng-app="starter">
+
+
+
+     <a href="stmary.html">
+            <button id="left" class="icon ion-android-arrow-back"></button>
+        </a>
+        <div class="number">
+             <div><img src="img/nothere.png"></div>
+             <div><img src="img/nothere.png"></div>
+             <div><img src="img/here.png"></div>
+             <div><img src="img/nothere.png"></div>
+             <div><img src="img/nothere.png"></div>
+         </div>
+        <a href="jailgate.html">
+            <button id="right" class="icon ion-android-arrow-forward"></button>
+        </a>
+
+
+     <div id="bg">
+    <img src="img/bg.jpg">
+    </div>
+
+
+
+    <ion-content class="has-header">
+        <ion-slide-box id>
+            <ion-slide class="slide">
+                <img src="img/mainguard.jpg">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/mainguard1.jpg">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/mainguard2.jpg">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/mainguard3.jpg">
+            </ion-slide>
+            <ion-slide class="slide">
+                <img src="img/mainguard.jpg">
+            </ion-slide>
+        </ion-slide-box>
+        <div id="swipe">
+            <p>
+            Swipe to View More Images
+            </p>
+            </div>
+
+
+
+
+
+        <h1 class="sitename"> Mainguard </h1>
+
+        <div class="card">
+            <div class="item item-text-wrap">
+
+                <div class="no-svg">
+                    <audio class="mejs-player" height="20%" width="90%" controls="controls" preload="none">
+                        <source type="audio/mp3" src="audio/maingate.mp3" />
+                        <source type="audio/ogg" src="audio/maingate.ogg" />
+                    </audio>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div id="wrap">
+        <h2>History</h2>
+            <p>As its name suggests, it was here that the main guard of the town troops for Clonmel were once stationed. During the siege of Clonmel in 1650 the old Manor Court was destroyed, and after the restoration of the Duke of Ormond's palatinate rights in 1662 he ordered the building of a new courthouse. It was completed in 1674. <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">See more.</a></p>
+            <div id="example" class="more">
+                <p>courthouse. It was completed in 1674. The rumour abounds that Christopher Wren designed the Main Guard, but no evidence exists to support this claim. The building's most striking features are its five semi-circular arches and a handsome clock and bell tower. On the west wall can be seen two coats of arms: those of the Borough of Clonmel and those of the Ormond family, both bearing the date 1675. In recent years the Main Guard has undergone substantial renovation by the Office of Public Works, who have brought the building back to its original 17th Century design. The Main Guard is open to visitors from March to late October. </p>
+                <p><a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Hide this content.</a></p>
+            </div>
+            
+             <div id="mapTitle">
+            <p>
+            Map
+            </p>
+            </div>
+
+            <div class="map" id="map-canvas-mainguard"></div>
+             <div id="here">
+        <div id="heretext">
+        <p>You are here</p>
+        <img id="hereimg" src="img/green.png">
+        </div>
+        </div>
+        </div>
+
+
+
+
+    </ion-content>
+
+
+
+    <div class="tabs tabs-icon-top">
+        <a href="index.html" class="tab-item">
+            <i class="icon ion-home"></i> Home
+        </a>
+        <a href="sites.html" class="tab-item active">
+            <i class="icon ion-earth"></i> Sites
+        </a>
+        <a href="gealtrails.html" class="tab-item">
+            <i class="icon ion-android-contacts"></i> About Us
+        </a>
+    </div>
+
+</body>
+
+
+
+
+
+</html>
