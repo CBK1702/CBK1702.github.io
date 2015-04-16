@@ -39,7 +39,7 @@ $(document).ready(function(){
            theNamesHtml +="</ul>"
           
            
-           $('div#my-name-response').html(response.msg);
+           $('div#my-name-response').html(response.allNames);
            
       }).fail(function(mgs){
           
