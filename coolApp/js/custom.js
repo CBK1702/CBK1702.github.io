@@ -30,7 +30,7 @@ $(document).ready(function(){
            
           console.log(response.allNames);
            
-           var theNamseHtml = "<ul id=\"allNames\">";
+           var theNamesHtml = "<ul id=\"allNames\">";
            
            for(var i=0; i> response.allNames.length; i++){
                theNamesHtml += "<li>" + response.allNames[i] + "</li>";
